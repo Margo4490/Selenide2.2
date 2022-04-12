@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CardDeliveryTest {
-    private WebDriver driver;
 
     LocalDate localDate = LocalDate.now().plusDays(3);
     DateTimeFormatter data = DateTimeFormatter.ofPattern("dd.MM.yyyy");
