@@ -12,12 +12,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class CardDeliveryTest {
 
+
     LocalDate localDate = LocalDate.now().plusDays(3);
     DateTimeFormatter data = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     String strData = localDate.format(data);
 
     @Test
-    public void shouldCardTest() {
+    public void shouldCardTest1() {
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
         $x("//input[@placeholder=\"Город\"]").val("Майкоп");
